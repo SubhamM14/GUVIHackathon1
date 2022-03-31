@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Makeup API</title>
+    <link rel="stylesheet" href ="style.css"></link>
+    
+</head>
+<body>
+    <div class="menu-bar">
+        <ul>
+          <li class="active"> <a href="#">Products <i class="fas fa-caret-down"></i></a>
+            <div class="products">
+              <ul>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products" target = "_blank">All Products</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_type=blush" target = "_blank">Blush</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_type=bronzer" target = "_blank">Bronzer</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_type=eyebrow" target = "_blank">Eyebrow</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_type=eyeliner" target = "_blank">Eyeliner</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_type=eyeshadow" target = "_blank">Eyeshadow</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_type=foundation" target = "_blank">Foundation</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_type=lipliner" target = "_blank">Lipliner</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_type=lipstick" target = "_blank">Lipstick</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_type=mascara" target = "_blank">Mascara</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_type=nailpolish" target = "_blank">Nail Polish</a></li>
+              </ul>
+      
+            </div>
+          </li>
+
+          <li> <a href="#">Top Brands <i class="fas fa-caret-down"></i></a>
+            <div class="products">
+              <ul>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?brand=pacifica" target = "_blank">PacificA</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?brand=maybelline"target = "_blank">MaybeLLine</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?brand=zorah" target = "_blank">zoRah</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?brand=almay" target = "_blank">Almay</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?brand=alva" target = "_blank">Alva</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?brand=covergirl" target = "_blank">coverGirl</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?brand=colourpop" target = "_blank">colourPOP</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?brand=dalish" target = "_blank">Dalish</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?brand=Boosh" target = "_blank">boosh</a></li>
+              </ul>
+            </div>
+          </li>
+
+
+          <li> <a href="#">By Category <i class="fas fa-caret-down"></i></a>
+            <div class="products">
+              <ul>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_category=powder" target = "_blank">Powder</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_category=cream" target = "_blank">Cream</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_category=pencil" target = "_blank">Pencil</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_category=liquid" target = "_blank">Liquid</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_category=gel" target = "_blank">Gel</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_category=palatte" target = "_blank">Palatte</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_category=concealer" target = "_blank">Concealer</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_category=contour" target = "_blank">Contour</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_category=bb_cc" target = "_blank">BB cc</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_category=mineral" target = "_blank">Mineral</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_category=highlighter" target = "_blank">Highlighter</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_category=lipstick" target = "_blank">Lipstick</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_category=lip_gloss" target = "_blank">Lip Gloss</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_category=lip_stain" target = "_blank">Lip stain</a></li>
+              </ul>
+            </div>
+          </li>
+          <li> <a href="#">By Ingredients <i class="fas fa-caret-down"></i></a> 
+            <div class="products">
+              <ul>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_tags=Vegan" target = "_blank">Vegan</li></a>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_tags=canadian" target = "_blank">Canadian</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_tags=ecocert">Eco-certified</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_tags=Gluten+Free"> Gluten Free</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_tags=hypoallergenic">Hypoallergenic</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_tags=natural">Natural</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_tags=organic">Organic</a></li>
+                <li><a href="https://makeup-api.herokuapp.com/api/v1/products?product_tags=sugar_free">Sugar Free</a></li>
+              </ul>
+            </div>
+            
+        </li>
+        </ul>
+      </div>
+      
+      <script src="script.js"></script>
+      <script src="https://kit.fontawesome.com/ffdfccd6c7.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

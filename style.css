@@ -1,0 +1,356 @@
+*{
+    margin:0px;
+   padding:0px;
+    box-sizing:border;
+  }
+  body{
+  
+  font-family: 'Abel', sans-serif;
+  color: #333;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  font-size: 1.6rem;
+  
+  }
+  
+  html{
+    font-size: 62.5%;
+  }
+  
+  .menu-bar{
+    background: wheat;
+    box-shadow: 0 8px 16px 0 rgb(146, 40, 146);
+    text-align:center;
+  }
+  .menu-bar ul{
+    display:inline-flex;
+    list-style:none;
+    color:black;
+   
+  }
+  .menu-bar ul li{
+    width:170px;
+    margin:15px;
+    padding:15px;
+    font-family: 'Stick No Bills', sans-serif;
+    z-index: 2;
+  }
+  .menu-bar ul li a{
+    text-decoration:none;
+    color:black;
+  }
+  .menu-bar ul li:hover{
+    background:rosybrown;
+    }
+  .menu-bar.fa{
+    margin-right:8px;
+  }
+  
+  .products{
+    display:none;
+  }
+  
+  .menu-bar ul li:hover .products{
+    display:block;
+    position:absolute;
+    background:grey;
+    box-shadow: 4px 8px 16px 0 rgb(221, 22, 99);
+    margin-top: 15px;
+    margin-left:-15px;
+    transition: 0.8s;
+   }
+  .menu-bar ul li:hover .products:hover{
+    transition: 0.8s;
+     transition:scale(1.1);
+  }
+  .menu-bar ul li:hover .products ul{
+    display:block;
+    margin:10px;
+    transition: 0.8s;
+   
+  }
+  .menu-bar ul li:hover .products ul:hover{
+     transition:scale(1.1);
+     transition: 0.2s;
+  }
+  .menu-bar ul li:hover .products ul li{
+   width:150px;
+    padding: 10px;
+  /*   background:transparent; */
+    transition: 0.10s;
+    
+    text-align:left;
+  }
+  .menu-bar ul li:hover .products ul li:hover{
+    font-weight:bold;
+    transition: 0.8s;
+  }
+  .menu-bar ul li:hover .products ul li a:hover{
+    transition: 0.8s;
+   
+  }
+  
+  .container{
+        width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+
+  .container-product{
+    width: 90%;
+    max-width: 1500px;
+  /* margin: 0 auto; */
+  overflow: scroll;
+}
+
+  
+  .header{
+    font-family: 'Gruppo', cursive;
+  text-align: center;
+  font-size: 3.3rem;
+  padding: 15px;
+    font-weight:bold;
+  }
+
+  .sub-head{
+    font-family: 'Gruppo', cursive;
+    text-align: center;
+    
+    padding-bottom: 20px;
+     font-weight:bold;
+  }
+  
+  .para1 {
+    width: 72%;
+  margin: 0px auto 20px auto;
+  }
+  
+  .para2 {
+    width: 72%;
+  margin: 0px auto 40px auto;
+  }
+
+
+  .all-image{
+      position:relative;
+      column-count:4;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-left:auto;
+      margin-right:auto;
+      margin-top:8rem;
+      padding:40px;
+   }
+  
+  .img-container1{
+    display:inline-block;
+    margin:15px;
+    overflow:hidden;
+    transition: 0.8s;
+    padding:30px;
+  }
+  
+  .img-container2{
+    display:inline-block;
+    margin-top:15px;
+    overflow:hidden;
+    grid-area: 1 / 2 / 3 / 2;
+    transition: 0.8s;
+    padding:30px;
+  }
+  
+  img{
+    width:100%;
+    transition:0.25s ease-in-out;
+  }
+  
+  .img-container1:hover{
+      box-shadow: 0 8px 16px 0 rgb(241, 76, 76);
+      transform:scale(1.05);
+  }
+  
+  .img-container2:hover{
+    box-shadow: 0 8px 16px 0 rgb(241, 76, 76);
+    transform:scale(1.05);
+  }
+  
+  
+  .search-box{
+    position:absolute;
+    margin: 1.5rem;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: #2f3640;
+    height:20px;
+    border-radius:40px;
+    padding:16px;
+   display:flex;
+    width: 90%;
+    max-width:600px;
+    
+   
+   }
+  
+  
+  
+  .search-btn{
+    color:white;
+    float: right;
+    margin-left: 10px;
+    background:grey;
+    width:20px;
+    height:20px;
+    border-radius : 50%;
+    padding:5px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+   
+  }
+  
+  
+  .search-text{
+    border:none;
+    background:none;
+    outline:none;
+    float:left;
+    padding:0;
+    color:white;
+    font-size: 1.5rem;
+    line-height:40px;
+    width:540px;
+    
+  }
+  
+  .side-heading{
+    font-weight: bold;
+  }
+  #cards{
+    /* display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap; */
+    padding: unset;
+    text-align: center;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 160px;
+    margin-inline-end: -160px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 0.5fr);
+    /* border: 1px solid black; */
+    padding-top: 5px;
+    padding-left: 20px;
+    max-height: 500px;
+  }
+  .container1{
+    background-color: white;
+    max-width:15rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-bottom:2em;
+  }
+  .container1:hover{
+    box-shadow: 3px 3px 10px 10px rgba(26, 25, 25, 0.1);
+  }
+
+  .info{
+    padding: 1rem;
+    
+  }
+  
+  .makeUp-products{
+    height: 10rem;
+    width:100%;
+  }
+  
+  
+  
+.product-head {
+    font-family: 'Gruppo', cursive;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.product-list{
+    padding: unset;
+    list-style-type: none;
+    text-align: center;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+}
+
+.items-list{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    border: 1px solid black;
+    padding-top: 5px;
+    padding-right: 30px;
+}
+
+.items-list li{
+    font-family: 'Gruppo', cursive;
+    display: block;
+}
+
+/* .items-list li:hover{
+    cursor: pointer;
+    box-shadow: 3px 3px 10px 10px rgba(26, 25, 25, 0.1);
+} */
+
+.product-category{
+    text-decoration: none;
+    font-weight:bold;
+    color: brown;
+}
+
+.product-category:hover{
+    cursor: pointer;
+    box-shadow: 0 15px 16px 0 rgb(76, 241, 200);
+    transition: 0.8s;
+}
+
+.icon-img{
+    height: 60px;
+}
+
+.footer{
+    font-family: chaucer;
+    height: 150px;
+    width: 100%;
+    background-color: black;
+}
+
+.footer-main{
+    text-align: center;  
+}
+
+.fp1{
+    
+    padding-top: 50px;
+    color: white;
+}
+
+.fp2{
+    color: wheat;
+}
+
+
+@media (max-width:540px){
+    .all-image{
+      display: grid;
+    grid-template-columns: repeat(2, 1fr);
+      padding:20px;
+    }
+  }
